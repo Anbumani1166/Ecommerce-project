@@ -14,6 +14,10 @@ import NewProduct from './components/NewProduct'
 import UpdateProduct from './components/UpdateProduct'
 import WhistList from './components/WhistList'
 
+if(!localStorage.getItem("cart")){
+  localStorage.setItem("cart",JSON.stringify([]))
+}
+
 function App() {
   const location = useLocation();
 
