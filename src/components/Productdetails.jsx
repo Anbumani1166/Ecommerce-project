@@ -38,7 +38,7 @@ const Productdetails = () => {
   // },[])
 
   //custom-hook
-  let {product,error,isLoding,setProduct}=useFetch("http://localhost:4000/product")
+  let {product,error,isLoding,setProduct}=useFetch("https://fakestoreapi.com/products")
 
     let dispatch = useDispatch()
 
@@ -67,7 +67,7 @@ const Productdetails = () => {
   }
 
   let handleDelete =((id)=>{
-    axios.delete(`http://localhost:4000/product/${id}`)
+    axios.delete(`https://fakestoreapi.com/products/${id}`)
     
     .then(()=>{
       Swal.fire({
