@@ -2,7 +2,7 @@ import React from 'react'
 import useFetch from './custom-hook/useFetch'
 
 const Home = () => {
-  let {product}=useFetch("http://localhost:4000/product")
+  let {product}=useFetch("https://fakestoreapi.com/products")
   return (
     <div>
       <h1>Home - TotalProduct -{product.length}</h1>
